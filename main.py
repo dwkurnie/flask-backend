@@ -6,7 +6,7 @@ import base64
 
 app = Flask(__name__)
 
-model = YOLO('best.pt')
+model = YOLO('best.pt')  # Ensure this model file is in the same directory or provide the correct path
 
 @app.route('/predict', methods=['POST'])
 def predict():
